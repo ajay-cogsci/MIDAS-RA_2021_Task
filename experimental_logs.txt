@@ -1,0 +1,18 @@
+Timestamp - 6th April 2021 2:31 AM
+Problem - Encounted the following error
+"ParserError: Error tokenizing data. C error: Expected 15 fields in line 19219, saw 23" while reading CSV file of dataset
+Solution - add argument(error_bad_lines=False) in read_csv() command
+Personal Comments - I realized that Line 19219 is a bad line for some reason.  One instance is less likely to cause accuracy fluctuations in such a big dataset.
+Status - Issue Resolved
+
+
+
+Timestamp - 6th April 2021 1:43 PM
+Problem - The remove_subcategory() does successfully remove the sub-categories from the product_category_tree however fails to stop when there are no categories to be removed and keeps adding the last category to the remaining n_category columns in the DataFrame
+Solution - Tried 12 different iterations and definitions of the function. Still can't resolve it.
+Personal Comments - 
+
+	1. I know there must exist a small function that deals with removing duplicated entries within the same row but I cant seem to find it in any documentation
+	2. While the purpose of the task is resolved i.e the sub-categories have been removed and the last category obviously not going to be the primary category, little harm is done overall. However, I do wish this issue could be resolved. 
+	
+Status - Issue Unresolved
